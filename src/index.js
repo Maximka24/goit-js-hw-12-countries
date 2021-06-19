@@ -37,12 +37,15 @@ function renderCountriCard(countries){
 	}
 	if (countries.length <= 10 && countries.length >=2) {
 		const markup = itemCardCountList(countries);
-		refs.countriesList.innerHTML = markup;		
+		refs.countriesList.innerHTML = markup;
+		return;		
 	}
 
 	if (countries.length === 1) {
+		refs.inputDate.value = '';
 		const markup = itemCardCount(countries);			
 		refs.countriesList.innerHTML = markup;
+		return
 	}
 
 	error.showToast();

@@ -16,7 +16,11 @@ p {
 	border: 2px solid red;
 }
 img {
- margin-left: 80px;
+	border: 0.5px solid #000;
+ 	margin-left: 80px;
+ 	display: block;
+  	max-width: 100%;
+  	height: auto;
 }
 
 .get-div {
@@ -74,6 +78,8 @@ img {
 .render-countries_info {	
 	list-style-type: none;
 	font-size: 20px;
+	margin: 0;
+	padding-top: 30px;
 }
 span {
 	font-weight: 700;
